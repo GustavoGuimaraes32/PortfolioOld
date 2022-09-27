@@ -250,14 +250,104 @@ img.main-image
     }
 }
 
+/* -=-=-=-=-=-=-=-=-=-= ABOUT ME -=-=-=-=-=-=-=-=-=-= */
+
+.about-me, .contact-us
+{
+    padding-bottom: 50px;
+    background-color: var(--Background);
+}
+
+.about-me img.main-image
+{
+    width: 450px;
+}
+
+.about-me .big-title
+{
+    margin-bottom: 20px;
+}
+
+.about-me .big-title h1
+{
+    color: var(--Cor1);
+}
+
+/* -=-=-=-=-=-=-=-=-=-= CONTATO -=-=-=-=-=-=-=-=-=-= */
+
+.contact-us a
+{
+    color: var(--Escuro1);
+    text-decoration: none;
+}
+
+.contact-us img
+{
+    width: 500px;
+}
+
+.contact-us .big-title 
+{
+    margin-bottom: 20px;
+    padding-left: 10px;
+}
+
+.social-content 
+{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.social-content p
+{
+    padding-left: 20px;
+    font-size: 18px;
+}
+
+.social-media 
+{
+    background: var(--Cor2);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: 0.5s;
+}
+
+.social-media i
+{
+    color: var(--Background);
+    font-size: 20px;
+}
+
+
 /* -=-=-=-=-=-=-=-=-=-= RESPONSIVIDADE -=-=-=-=-=-=-=-=-=-= */
 
 @media screen and (max-width: 1400px)
 {
+
+    .about-me img.main-image
+    {
+        margin: 90px 0px 0px 90px;
+    }
+
     img.main-image 
     {
         margin: 90px 0px 0px 20px;
     }
+}
+
+@media screen and (max-width: 980px) 
+{
+    /* -=-=-=-=-=-=-=-=-=-= CONTATO -=-=-=-=-=-=-=-=-=-= */
+    .contact-us img
+    {
+        width: 100%;
+    }   
 }
 
 @media screen and (max-width: 870px)
@@ -417,6 +507,12 @@ img.main-image
         margin: 1.4rem 0 1.5rem;
     }
 
+    .social-media p
+    {
+        font-size: .95rem;
+        margin: 1.4rem 0 1.5rem;
+    }
+
     img.main-image 
     {
         margin: 0px;
@@ -433,6 +529,35 @@ img.main-image
         font-size: 1.25rem;
     }
 
+        /* -=-=-=-=-=-=-=-=-=-= CONTATO -=-=-=-=-=-=-=-=-=-= */
+        .contact-us img
+        {
+            width: 500px;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+        } 
+
+}  
+
+@media screen and (max-width: 760px)
+{
+    /* -=-=-=-=-=-=-=-=-=-= RESPONSIVIDADE DO SHOWCASE -=-=-=-=-=-=-=-=-=-= */ 
+
+    .about-me img.main-image
+    {
+        margin: 0px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 530px) 
+{
+    .contact-us img
+    {
+        width: 100%;
+        padding: 30px;
+    }   
 }
 
 @media screen and (max-width: 470px)
@@ -455,5 +580,11 @@ img.main-image
     .showcase-area .btn
     {
         font-size: 0.8rem;
+    }
+
+    .social-content p 
+    {
+        padding-left: 10px;
+        font-size: 16px;
     }
 }
