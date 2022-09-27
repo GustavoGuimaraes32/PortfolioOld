@@ -9,7 +9,7 @@
 
 .light
 {
-    --Background: #f1f8fc;
+    --Background: #fbf8fe;
 
     --Cor1: #2B1B2E;
     --Cor2: #54344D;
@@ -32,6 +32,7 @@
     --Escuro1: #f1f8fc;
     --Escuro2: #cfd5d8;
 }
+
 
 /* -=-=-=-=-=-=-=-=-=-= NAVBAR -=-=-=-=-=-=-=-=-=-= */
 
@@ -252,9 +253,9 @@ img.main-image
 
 /* -=-=-=-=-=-=-=-=-=-= ABOUT ME -=-=-=-=-=-=-=-=-=-= */
 
-.about-me, .contact-us
+.about-me, .contact-us, .skills, .projects
 {
-    padding-bottom: 50px;
+    padding-bottom: 100px;
     background-color: var(--Background);
 }
 
@@ -324,6 +325,124 @@ img.main-image
     font-size: 20px;
 }
 
+/* -=-=-=-=-=-=-=-=-=-= HABILIDADES -=-=-=-=-=-=-=-=-=-= */
+
+.skills
+{
+    background-color: var(--Background);
+}
+
+.section-skills img
+{
+    width: 450px;
+}
+
+.section-skills .big-title h1
+{
+    padding-left: 10px;
+}
+
+.section-skills .skill-box
+{
+    margin-top: 20px;
+    padding: 0 10px;
+}
+
+.skill-item 
+{
+    margin: 15px 0px;
+    transition: 0.5s ease;
+}
+
+.section-skills .skill-box span
+{
+    color: var(--Cor1);
+}
+
+.section-skills .skill-box .b1
+{
+    width: 400px;
+    height: 8px;
+    background-color: #CCC;
+    margin-top: 2px;
+    border-radius: 5px;
+    transition: 0.5s ease;
+}
+
+.section-skills .skill-box .b2
+{
+    height: 8px;
+    background-color: var(--Cor2);
+    border-radius: 5px;
+    transition: 0.5s ease-out;
+}
+
+.r90
+{
+    width: 90%;
+}
+
+.r75
+{
+    width: 75%;
+}
+
+.r70
+{
+    width: 70%;
+}
+
+.r55
+{
+    width: 55%;
+}
+
+.r45
+{
+    width: 45%;
+}
+
+
+/* -=-=-=-=-=-=-=-=-=-= PROJETOS -=-=-=-=-=-=-=-=-=-= */
+
+.section-projects .big-title
+{
+    margin-left: 40px;
+    margin-bottom: 30px;
+}
+
+.section-projects img
+{
+    width: 450px;
+}
+
+.projects-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    float: left;
+}
+
+.section-projects .porject-item
+{
+    width: 180px;
+    height: 80px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.section-projects .projects-container img
+{
+    object-fit: cover;
+    width: 100%;
+
+}
 
 /* -=-=-=-=-=-=-=-=-=-= RESPONSIVIDADE -=-=-=-=-=-=-=-=-=-= */
 
@@ -347,7 +466,12 @@ img.main-image
     .contact-us img
     {
         width: 100%;
-    }   
+    }
+
+    .section-skills img
+    {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 870px)
@@ -536,7 +660,45 @@ img.main-image
             position: relative;
             left: 50%;
             transform: translateX(-50%);
-        } 
+        }
+        
+    .section-skills img
+    {
+        display: none;
+    }
+
+    .section-skills .skill-box .b1
+    {
+        width: 100%;
+    }
+
+    /* -=-=-=-=-=-=-=-=-=-= RESPONSIVIDADE PROJETOS -=-=-=-=-=-=-=-=-=-= */
+
+    .section-projects .project-img
+    {
+        display: none;
+    }
+
+    .section-projects .left
+    {
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .section-projects .big-title 
+    {
+        margin: 0px !important;
+        text-align: center;
+        margin-bottom: 40px !important;
+    }
+
+    .section-projects .porject-item
+    {
+        width: 220px;
+        height: 120px;
+    }
 
 }  
 
